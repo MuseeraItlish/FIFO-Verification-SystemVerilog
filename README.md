@@ -30,13 +30,13 @@ Multiple FIFO implementations tested
 The following test cases were implemented:
 
 ## Test Case	and their Purpose
--Clearing Memory	Verifies basic write/read operation using zero data and checks FIFO empty behavior.
+-Clearing Memory	---> Verifies basic write/read operation using zero data and checks FIFO empty behavior.
 
--Data = Index	Writes sequential index values and verifies the same sequence is returned.
+-Data = Index --->	Writes sequential index values and verifies the same sequence is returned.
 
--Read After Write	Writes random data and immediately reads it back to verify data integrity.
+-Read After Write --->	Writes random data and immediately reads it back to verify data integrity.
 
--Random Test	Performs repeated random write/read operations to exercise FIFO functionality.
+-Random Test	---> Performs repeated random write/read operations to exercise FIFO functionality.
 
 ## Verification Methodology
 
