@@ -69,7 +69,7 @@ else
 
 endtask
 
-//-------CLEAR FIFO TEST-----------//
+//1.--------------------------------CLEAR FIFO TEST------------------------------//
 task clear_fifo_test();
 
 
@@ -92,7 +92,7 @@ else
 $display("clar fifo test failed");
 endtask
 
-//---DATA=ADDRESS TEST-----//
+//2.-------------------------------------DATA=ADDRESS TEST----------------------------------------//
 task data_index_test();
 
 $display("data=index test");
@@ -110,7 +110,7 @@ for(int i=0;i<DEPTH;i++)
 $display("data=index test complete");
 endtask
 
-//---READ AFTER WRITE TEST------//
+//3.-----------------------------------------READ AFTER WRITE TEST--------------------------------------//
 task read_after_write();
 logic [DATA_WIDTH-1:0] rand_data;
 repeat(25)
@@ -122,7 +122,7 @@ end
 $display("READ AFTER WRITE TEST COMPLETE");
 endtask
 
-//---RANDOM TEST-----//
+//4.------------------------------------------RANDOM TEST----------------------------------------//
 task random_test();
     logic [DATA_WIDTH-1:0] rand_data;
     
